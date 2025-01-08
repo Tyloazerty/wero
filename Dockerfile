@@ -16,3 +16,8 @@ EXPOSE 80
 
 # Commande par défaut pour lancer Apache
 CMD ["apache2-foreground"]
+
+#server php
+FROM php:fpm
+
+RUN docker-php-ext-install mysqli

@@ -7,7 +7,7 @@ $password = 'iWhSfG8np5';
 $port = '3306';
 
 // Connexion à PostgreSQL
-$conn = pg_connect("host=$host dbname=$dbname user=$user password=$password port=$port");
+$conn = mysqli_connect("host=$host dbname=$dbname user=$user password=$password port=$port");
 
 if (!$conn) {
     die("Échec de la connexion à la base de données : " . pg_last_error());

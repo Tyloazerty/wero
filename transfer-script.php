@@ -5,7 +5,7 @@ $host = 'sql7.freesqldatabase.com';
 $username = 'sql7756512';
 $password = 'iWhSfG8np5';
 $dbname = 'sql7756512';
-$port = 3306;
+// $port = 3306;
 
 $conn = new mysqli($host, $username, $password, $dbname, $port);
 

@@ -1,6 +1,5 @@
 <?php
 
-phpinfo();
 // Connexion à la base de données
 $host = 'sql7.freesqldatabase.com';
 $username = 'sql7756512';

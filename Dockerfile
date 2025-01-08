@@ -8,10 +8,8 @@ COPY . /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 
 # Installer les dépendances si vous utilisez Composer (optionnel)
-# RUN apt-get update && apt-get install -y zip unzip git && \
-#     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-RUN apt-get install php-mysqlnd
+RUN apt-get update && apt-get install -y zip unzip git && 
+    # curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Exposer le port 80
 EXPOSE 80

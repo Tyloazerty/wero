@@ -1,13 +1,15 @@
 <?php
 
 // Connexion à la base de données
-$host = 'http://sql7.freesqldatabase.com';
-$username = 'sql7756512';
-$password = 'iWhSfG8np5';
-$dbname = 'sql7756512';
-// $port = 3306;
+// Connexion à la base de données
+$mysqli = new mysqli($host, $username, $password, $dbname, $port);
 
-$conn = new mysqli($host, $username, $password, $dbname);
+// Vérifiez la connexion
+if ($mysqli->connect_error) {
+    die("Échec de connexion : " . $mysqli->connect_error);
+}
+echo "Connexion réussie !";
+
 
 // Vérifiez la connexion
 if ($conn->connect_error) {
